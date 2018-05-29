@@ -28,4 +28,6 @@ before_script:
 
 #TODO command to run the test suite
 script:
-  - python manage.py test
+  - python manage.py test -keepdb --settings=guzo.test_settings
+  # Or add the app name
+  # - python manage.py test -keepdb --settings=guzo.test_settings guzo.lightrail
